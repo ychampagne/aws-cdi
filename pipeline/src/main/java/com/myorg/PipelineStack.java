@@ -44,6 +44,7 @@ public class PipelineStack extends Stack {
         Artifact sourceOutput = new Artifact("sourceOutput");
         
         //https://docs.aws.amazon.com/codepipeline/latest/userguide/reference-pipeline-structure.html
+        
         GitHubSourceAction gitCommitSource = GitHubSourceAction.Builder.create()
         		.actionName("GitCommit_Source")
         		.repo("aws-cdi")
