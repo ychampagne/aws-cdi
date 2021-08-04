@@ -58,7 +58,6 @@ public class PipelineStack extends Stack {
         		
         		
         		
-
         pipeline.addStage(StageOptions.builder()
                 .stageName("Source")
                 .actions(Collections.singletonList(gitCommitSource))
